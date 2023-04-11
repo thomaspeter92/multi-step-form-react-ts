@@ -1,0 +1,26 @@
+@import '../../styles//variables';
+
+.input {
+  padding: 15px;
+  border: 1px solid $light-gray;
+  border-radius: $radius-sm;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  width: 100%;
+  display: block;
+  color:$marine-blue;
+  font-size: 18px;
+  outline: none;
+  margin-bottom: 25px;
+
+  &::placeholder {
+    color: $cool-gray;  
+  } 
+  &:focus {
+    border-color: $purple-blue;
+  }
+
+  &.error {
+    border-color: $strawberry-red;
+  }
+}

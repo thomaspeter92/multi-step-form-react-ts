@@ -1,0 +1,39 @@
+@import './variables';
+@import './mixins';
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("UbuntuRegular"), url("../assets/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: local("UbuntuBold"), url("../assets/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("UbuntuMedium"), url("../assets/fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+main{ 
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $magnolia;
+}

@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.sidebar {
+  background-image: url('../../assets/images/bg-sidebar-desktop.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: $radius-sm;
+}
+ 

@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.container { 
+  background-color: $white;
+  border-radius: $radius-sm;
+  box-shadow: $shadow;
+  width: 70vw;
+  padding: 20px;
+  display: flex;
+}
+
+.mainContent {
+  flex: 1;
+  margin: 0 50px;
+}
+
+.btnContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  &.start {
+    justify-content: flex-end;
+  }
+
+}

@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.card {
+  border: 1px solid $light-gray;
+  padding: 15px;
+  flex: 1;
+  border-radius: $radius-md;
+  cursor: pointer;
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+
+  .imgContainer {
+    margin-bottom: 50px;
+    img {
+      width: 55px;
+    }
+  }
+
+  .title {
+    color: $marine-blue;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+  }
+
+  .price {
+    color: $cool-gray;
+    font-size: .9rem;
+    margin-bottom: 5px;
+  }
+
+  .subText {
+    color: $marine-blue
+  }
+}

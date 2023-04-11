@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+.btn {
+  padding: 15px 25px;
+  border-radius: $radius-sm;
+  font-weight: 500;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  cursor: pointer;
+
+  &.primary {
+    background-color: $marine-blue;
+    color: $white;
+  }
+
+  &.secondary{
+    background-color: $white;
+    color: $marine-blue
+  }
+}

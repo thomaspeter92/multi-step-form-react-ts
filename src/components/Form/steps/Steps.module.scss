@@ -1,0 +1,16 @@
+@import '../../../styles/variables';
+
+.title {
+  margin: 10px 0;
+  color: $marine-blue
+}
+
+.subheading {
+  margin-bottom: 25px;
+  color: $cool-gray;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+}

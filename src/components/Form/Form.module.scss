@@ -4,20 +4,24 @@
   background-color: $white;
   border-radius: $radius-sm;
   box-shadow: $shadow;
-  width: 70vw;
+  width: 1000px;
+  height: 80vh;
   padding: 20px;
   display: flex;
 }
 
 .mainContent {
   flex: 1;
-  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  padding: 25px 10%;
 }
 
 .btnContainer{
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: auto;
   &.start {
     justify-content: flex-end;
   }

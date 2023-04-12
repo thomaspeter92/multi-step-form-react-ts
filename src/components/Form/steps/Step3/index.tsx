@@ -1,6 +1,11 @@
+import { FormikProps } from "formik"
 import React from 'react'
 
-const Step3 = () => {
+type Step3Props = {
+  formik: FormikProps<any>
+}
+
+const Step3: React.FC<Step3Props> = ({formik}) => {
   return (
     <div>Step3</div>
   )

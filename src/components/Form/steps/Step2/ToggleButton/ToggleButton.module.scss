@@ -1,0 +1,41 @@
+@import '../../../../../styles/variables';
+
+.container {
+  background-color: $magnolia;
+  padding: 15px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $radius-md;
+
+  .text {
+    color: $cool-gray;
+    font-weight: 500;
+
+    &.selected {
+      color: $marine-blue;
+    }
+  }
+
+  .switch {
+    border-radius: 50px;
+    padding: 5px;
+    border: 1px solid;
+    width: 50px;
+    background-color: $marine-blue;
+    margin: 0 10px;
+    display: flex;
+  
+    &.toggleRight {
+      justify-content: flex-end;
+    }
+    .switchInner {
+      border-radius: 100%;
+      background-color: $white;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+

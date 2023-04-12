@@ -26,12 +26,12 @@ const Form: React.FC = () => {
       email: '',
       phone: '',
       plan: '',
+      period: 'monthly',
       addons: []
     }, 
     onSubmit: () => {}
   })
 
-  console.log(formik.values)
   const nextStep = () => {
     if (step === 5) return;
     setStep(step + 1);

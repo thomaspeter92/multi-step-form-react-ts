@@ -1,0 +1,61 @@
+@import '../../../../../styles/variables';
+
+.card {
+  border: 1px solid $purple-blue;
+  border-radius: $radius-md;
+  padding: 20px 35px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  &.checked {
+    background-color: $alabaster;
+  }
+
+
+  .checkbox {
+    padding: 3px;
+    appearance: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 2px;
+      border: 1px solid $purple-blue;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-25%, -50%);
+    }
+
+    &:checked::before {
+      content: "✔";
+      background-color: $purple-blue;
+      color: $white;
+      text-align: center;
+    }
+
+  }
+
+  .info {
+
+    .title {
+      color: $marine-blue;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .desc {
+      color: $cool-gray;
+    }
+
+  }
+  .price {
+    margin-left: auto;
+    color: $purple-blue;
+  }
+}

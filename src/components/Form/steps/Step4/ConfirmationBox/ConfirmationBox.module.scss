@@ -1,0 +1,27 @@
+@import '../../../../../styles/variables';
+
+.container {
+  background-color: $alabaster;
+  border-radius: $radius-md;
+  padding: 20px;
+
+  .title {
+ color: $marine-blue;
+  }
+  .text {
+    color: $cool-gray;
+  }
+  .change {
+    color: $cool-gray;
+    text-decoration: underline;
+    &:hover {
+      color: $marine-blue;
+    }
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

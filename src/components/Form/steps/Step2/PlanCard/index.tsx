@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './PlanCard.module.scss'
-import ArcadeIcon from '../../assets/images/icon-arcade.svg'
 
 type CardProps = {
  icon: string,
@@ -12,15 +11,14 @@ type CardProps = {
 }
 
 const PlanCard: React.FC<CardProps> = ({icon, name, price, onClick, selected, isYearly}) => {
-
   return (
-    <div onClick={onClick} className={`${styles.card} ${selected ? styles.selected : null}`}>
+    <div onClick={onClick} className={`${styles.card} ${selected ? styles.selected : ''}`}>
       <div className={styles.imgContainer}>
         <img src={icon} />
       </div>
       <h4 className={styles.title}>{name}</h4>
       <p className={styles.price}>${isYearly ? price.yearly : price.monthly}/{isYearly ? 'yr' : 'mo'}</p>
-      {isYearly ? <p className={styles.subText}>2 months free</p> : null }
+      <p className={styles.subText}>{isYearly ? '2 months free' : null}</p> 
     </div>
   )
 }

@@ -45,12 +45,12 @@ const Step2: React.FC<Step2Props> = ({formik}) => {
       <p className={styles.subheading}>You have the option of yearly or monthly billing.</p>
       <div className={styles.cardContainer}>
         {plans.map((plan, i) => (
-          <PlanCard isYearly={formik.values.period === 'yearly'} selected={formik.values.plan === plan.name} onClick={() => handleClick(plan.name)} icon={plan.icon} name={plan.name} price={plan.price} />
+          <PlanCard key={plan.name} isYearly={formik.values.period === 'yearly'} selected={formik.values.plan === plan.name} onClick={() => handleClick(plan.name)} icon={plan.icon} name={plan.name} price={plan.price} />
         ))}
       </div>
       <ToggleButton handleToggle={togglePlanPeriod} />
     </div>
   );
-};
+}; 
 
 export default Step2;

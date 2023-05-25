@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 
 type ToggleProps = {
  handleToggle: () => void;  
+ yearly: boolean;
 }
 
 const spring = {
@@ -16,8 +17,8 @@ const switchVariants = {
   off: { x: "0px" }, // Left end
 };
 
-const ToggleButton: React.FC<ToggleProps> = ({handleToggle}) => {
-  const [toggleOn, setToggleOn] = useState(false)
+const ToggleButton: React.FC<ToggleProps> = ({handleToggle, yearly}) => {
+  const [toggleOn, setToggleOn] = useState(() => yearly)
   const toggle = () => {
     setToggleOn(!toggleOn)
     handleToggle()

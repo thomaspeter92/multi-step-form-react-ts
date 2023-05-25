@@ -9,13 +9,14 @@ import Step5 from "./steps/Step5";
 import Button from "../Button";
 import {useFormik} from 'formik';
 
+type AddOn = 'Online service' | 'Larger storage' | 'Customizable profile'
 
 type FormData = {
   name: string;
   email: string;
   phone: string;
   plan: string;
-  addons: string[];
+  addons: AddOn[];
 };
 
 const Form: React.FC = () => {
@@ -31,6 +32,7 @@ const Form: React.FC = () => {
     }, 
     onSubmit: () => {}
   })
+
 
   const nextStep = () => {
     if (step === 5) return;

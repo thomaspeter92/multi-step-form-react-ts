@@ -3,23 +3,22 @@ import styles from './AddOnCard.module.scss'
 
 
 type CardProps = {
-  name: string,
-  value: string,
   title: string,
   desc: string,
-  price: number
+  price: number,
+  id: string,
+  onClick: (e:any) => void
  }
 
-const AddOnCard: React.FC<CardProps> = ({name, value, title, desc, price}) => {
+const AddOnCard: React.FC<CardProps> = ({id, title, desc, price, onClick}) => {
   const [checked, setChecked] = React.useState<boolean>(false)
 
   const handleCheck = () => { 
     setChecked(!checked)
   }
-
   return (
-    <label className={`${styles.card} ${checked ? styles.checked : ''}`}>
-      <input type="checkbox" className={styles.checkbox} onChange={handleCheck}/>
+    <label htmlFor={"checkbox"+title} onClick={(e) => onClick(e)} className={`${styles.card} ${checked ? styles.checked : ''}`}>
+      <input id={"checkbox"+title} value={id} type="checkbox" className={styles.checkbox} onChange={handleCheck}/>
       <div className={styles.info}>
         <p className={styles.title}>
         {title}

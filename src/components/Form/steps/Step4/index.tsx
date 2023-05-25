@@ -9,15 +9,16 @@ type Step4Props = {
 }
 
 const Step4: React.FC<Step4Props> = ({formik}) => {
+
+  console.log(formik.values)
   return (
     <div>
       <h1 className={styles.title}>
       Finishing up
       </h1>
-
       <p className={styles.subheading}>Double-check everything looks OK before confirming.</p>
 
-      <ConfirmationBox />        
+      <ConfirmationBox data={formik.values}/>        
 
       </div>
   )

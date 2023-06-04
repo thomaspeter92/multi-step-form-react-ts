@@ -20,3 +20,20 @@
   flex-direction: column;
   gap: 15px
 }
+
+.step5 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+
+  h1 {
+    color: $marine-blue;
+  }
+  p {
+    color: $cool-gray;
+  }
+}

@@ -19,7 +19,7 @@ const Step4: React.FC<Step4Props> = ({formik}) => {
       <p className={styles.subheading}>Double-check everything looks OK before confirming.</p>
 
       <ConfirmationBox data={formik.values}/>        
-
+   
       </div>
   )
 }

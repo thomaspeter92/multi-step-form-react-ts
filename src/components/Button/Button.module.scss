@@ -13,10 +13,15 @@
   &.primary {
     background-color: $marine-blue;
     color: $white;
+    &:hover {
+      background-color: $purple-blue;
+    }
   }
 
   &.secondary{
     background-color: $white;
-    color: $marine-blue
+    color: $cool-gray;
+    &:hover{color: $marine-blue}
   }
+
 }

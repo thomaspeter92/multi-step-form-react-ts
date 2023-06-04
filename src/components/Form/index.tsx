@@ -60,8 +60,8 @@ const Form: React.FC = () => {
           <Step5 />
         :null}
         <div className={`${styles.btnContainer} ${step === 1 ? styles.start : null}`}>
-          {step !== 1 ? <Button onClick={prevStep} variant="secondary">Go Back</Button> : null}
-          {step !== 5 ? <Button onClick={nextStep} variant="primary">Next Step</Button> : null}
+          {step !== 1 && step !== 5 ? <Button onClick={prevStep} variant="secondary">Go Back</Button> : null}
+          {step !== 5 ? <Button onClick={nextStep} variant="primary" >{step === 4 ? 'Confirm' : 'Next Step' }</Button> : null}
         </div>
       </form>
 
